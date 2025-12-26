@@ -1,0 +1,405 @@
+[1m[7m%[27m[1m[0m                                                                                                          
+ 
+
+[0m[27m[24m[Jsofia@sofibook part12-containers-applications % [K[?2004hddco d docker ps[?2004l
+
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[1m[7m%[27m[1m[0m                                                                                                          
+ 
+
+[0m[27m[24m[Jsofia@sofibook part12-containers-applications % [K[?2004hddod  ddockr  er ps -a[?2004l
+
+CONTAINER ID   IMAGE               COMMAND                  CREATED        STATUS                      PORTS     NAMES
+be10a9258988   ubuntu              "bash"                   6 hours ago    Exited (0) 8 minutes ago              happy_ramanujan
+12c863f894fa   autoblog            "docker-entrypoint.s…"   6 months ago   Exited (0) 6 months ago               nervous_cori
+a319c0471977   autoblog:smallest   "docker-entrypoint.s…"   6 months ago   Exited (0) 6 months ago               naughty_rubin
+e5846f00774b   autoblog:smallest   "docker-entrypoint.s…"   6 months ago   Exited (137) 6 months ago             stoic_fermat
+c41655859de0   autoblog:smallest   "docker-entrypoint.s…"   6 months ago   Exited (137) 6 months ago             clever_williamson
+[1m[7m%[27m[1m[0m                                                                                                          
+ 
+
+[0m[27m[24m[Jsofia@sofibook part12-containers-applications % [K[?2004hddockre s   er start -i happy_ramanujan[?2004l
+
+[?2004h]0;root@be10a9258988: /root@be10a9258988:/# apt-get update
+[?2004l
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease [256 kB]
+
+0% [1 InRelease 6913 B/256 kB 3%]
+                                 
+0% [Working]
+            
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+
+0% [2 InRelease 1121 B/126 kB 1%]
+0% [2 InRelease 43.1 kB/126 kB 34%]
+                                   
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+
+0% [3 InRelease 14.2 kB/126 kB 11%]
+                                   
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+
+0% [4 InRelease 14.2 kB/126 kB 11%]
+                                   
+0% [Working]
+14% [Waiting for headers]
+                         
+Get:5 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 Packages [274 kB]
+
+14% [5 Packages 14.2 kB/274 kB 5%]
+                                  
+14% [Working]
+14% [5 Packages store 0 B] [Waiting for headers]
+                                                
+15% [Waiting for headers]
+                         
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages [1776 kB]
+
+15% [6 Packages 6980 B/1776 kB 0%]
+                                  
+19% [Working]
+19% [6 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                           
+Get:7 http://ports.ubuntu.com/ubuntu-ports noble/restricted arm64 Packages [113 kB]
+
+                                                           
+19% [6 Packages store 0 B] [7 Packages 1190 B/113 kB 1%]
+                                                        
+19% [6 Packages store 0 B]
+                          
+19% [Waiting for headers]
+19% [7 Packages store 0 B] [Waiting for headers]
+                                                
+20% [Waiting for headers]
+                         
+Get:8 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Packages [19.0 MB]
+
+20% [8 Packages 14.2 kB/19.0 MB 0%]
+28% [8 Packages 3813 kB/19.0 MB 20%]
+36% [8 Packages 7356 kB/19.0 MB 39%]
+44% [8 Packages 11.1 MB/19.0 MB 59%]
+52% [8 Packages 14.9 MB/19.0 MB 78%]
+60% [8 Packages 18.7 MB/19.0 MB 99%]
+61% [Connecting to ports.ubuntu.com]
+61% [8 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                           
+Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1894 kB]
+
+                                                           
+61% [8 Packages store 0 B] [9 Packages 1188 B/1894 kB 0%]
+                                                         
+65% [8 Packages store 0 B]
+                          
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages [4196 kB]
+
+65% [8 Packages store 0 B] [10 Packages 4084 B/4196 kB 0%]
+                                                          
+71% [10 Packages 2587 kB/4196 kB 62%]
+71% [9 Packages store 0 B] [10 Packages 2587 kB/4196 kB 62%]
+                                                            
+72% [10 Packages 2900 kB/4196 kB 69%]
+                                     
+75% [Working]
+75% [10 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                            
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Packages [38.0 kB]
+
+75% [10 Packages store 0 B] [11 Packages 4088 B/38.0 kB 11%]
+                                                            
+75% [10 Packages store 0 B]
+                           
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [2223 kB]
+
+75% [10 Packages store 0 B] [12 Packages 6980 B/2223 kB 0%]
+                                                           
+77% [12 Packages 614 kB/2223 kB 28%]
+77% [11 Packages store 0 B] [12 Packages 614 kB/2223 kB 28%]
+                                                            
+77% [12 Packages 637 kB/2223 kB 29%]
+                                    
+81% [Working]
+81% [12 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                            
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [34.7 kB]
+
+                                                            
+81% [12 Packages store 0 B] [13 Packages 2640 B/34.7 kB 8%]
+                                                           
+81% [12 Packages store 0 B]
+                           
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Packages [49.4 kB]
+
+81% [12 Packages store 0 B] [14 Packages 1192 B/49.4 kB 2%]
+                                                           
+81% [14 Packages 34.5 kB/49.4 kB 70%]
+81% [13 Packages store 0 B] [14 Packages 34.5 kB/49.4 kB 70%]
+                                                             
+82% [14 Packages 40.3 kB/49.4 kB 82%]
+                                     
+82% [Working]
+82% [14 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                            
+83% [Waiting for headers]
+                         
+Get:15 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages [4031 kB]
+
+83% [15 Packages 14.2 kB/4031 kB 0%]
+90% [15 Packages 3608 kB/4031 kB 90%]
+                                     
+91% [Working]
+91% [15 Packages store 0 B] [Connecting to ports.ubuntu.com]
+                                                            
+Get:16 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [1867 kB]
+
+                                                            
+91% [15 Packages store 0 B] [16 Packages 6980 B/1867 kB 0%]
+                                                           
+94% [16 Packages 895 kB/1867 kB 48%]
+96% [Working]                                                                                 5986 kB/s 0s
+96% [16 Packages store 0 B] [Connecting to ports.ubuntu.com]                                  5986 kB/s 0s
+                                                                                                          
+Get:17 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Packages [36.4 kB]
+
+96% [16 Packages store 0 B] [17 Packages 1192 B/36.4 kB 3%]                                   5986 kB/s 0s
+96% [16 Packages store 0 B]                                                                   5986 kB/s 0s
+96% [Waiting for headers]                                                                     5986 kB/s 0s
+96% [17 Packages store 0 B] [Waiting for headers]                                             5986 kB/s 0s
+                                                                                                          
+Get:18 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [1180 kB]
+
+96% [17 Packages store 0 B] [18 Packages 6980 B/1180 kB 1%]                                   5986 kB/s 0s
+97% [18 Packages 6980 B/1180 kB 1%]                                                           5986 kB/s 0s
+99% [Working]                                                                                 5986 kB/s 0s
+99% [18 Packages store 0 B]                                                                   5986 kB/s 0s
+100% [Working]                                                                                5986 kB/s 0s
+                                                                                                          
+Fetched 37.4 MB in 6s (5859 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 58%
+
+Reading package lists... 58%
+
+Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 78%
+
+Reading package lists... 78%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 84%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+[?2004h]0;root@be10a9258988: /root@be10a9258988:/# apt-get y   -y install an  nano
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 58%
+
+Reading package lists... 58%
+
+Reading package lists... 64%
+
+Reading package lists... 64%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 77%
+
+Reading package lists... 78%
+
+Reading package lists... 78%
+
+Reading package lists... 83%
+
+Reading package lists... 83%
+
+Reading package lists... 84%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 98%
+
+Reading state information... Done
+
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 9 not upgraded.
+Need to get 281 kB of archives.
+After this operation, 909 kB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 nano arm64 7.2-2ubuntu0.1 [281 kB]
+
+2% [1 nano 6929 B/281 kB 2%]
+                            
+100% [Working]
+              
+Fetched 281 kB in 0s (2533 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4376 files and directories currently installed.)
+Preparing to unpack .../nano_7.2-2ubuntu0.1_arm64.deb ...
+Unpacking nano (7.2-2ubuntu0.1) ...
+Setting up nano (7.2-2ubuntu0.1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+[?2004h]0;root@be10a9258988: /root@be10a9258988:/# nano 7 /usr/src/app/index.js 
+[?2004l
+[?2004h[?1049h[22;0;0t[1;18r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[16;47H(B[0;7m[ Reading... ](B[m[16;46H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2 [30b/usr/src/app/index.js [39b [1;106H(B[m
+[17d(B[0;7m^G(B[m Help[17;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[17;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo
+[18d(B[0;7m^X(B[m Exit[18;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo
+[2d[?12l[?25h[?25l[1;68H(B[0;7m*[106G(B[m[?12l[?25h
+[2dc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25h)[?25l[?12l[?25h [?25l[?12l[?25h([?25l[?12l[?25h'[?25l[?12l[?25hH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l
+[16d[K[?12l[?25h[2;18Ho[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h W[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hl[?25l[?12l[?25hd[?25l[?12l[?25h[2;13H(B[0;1m[35m'Hello World'[39m(B[m[?25l[?12l[?25h)[?25l[17;16H [10b(B[0;7mM-D(B[m DOS Format [11b(B[0;7mM-A(B[m Append[16X[17;79H(B[0;7mM-B(B[m Backup File[K[18;2H(B[0;7mC(B[m Cancel[16G [10b(B[0;7mM-M(B[m Mac Format [11b(B[0;7mM-P(B[m Prepend[15X[18;79H(B[0;7m^T(B[m Browse[K
+[16d(B[0;7mFile Name to Write: /usr/src/app/index.js [64b [16;42H(B[m[?12l[?25h[?25l    [1K (B[0;7m[ Writing... ](B[m[K[1;68H(B[0;7m [106G(B[m[16;46H(B[0;7m[ Wrote 1 line ](B[m[17;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut [8b(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[18;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste [6b(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[?12l[?25h[2;27H[?25l
+[16d[J[18d[?12l[?25h[18;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;root@be10a9258988: /root@be10a9258988:/# [Kexit
+[?2004l
+exit
+[1m[7m%[27m[1m[0m                                                                                                          
+ 
+
+[0m[27m[24m[Jsofia@sofibook part12-containers-applications % [K[?2004heexit[?2004l
+
