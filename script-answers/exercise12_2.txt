@@ -1,0 +1,52 @@
+Script started on Fri Dec 26 13:23:47 2025
+
+sofia@sofibook part12-containers-applications % docker container run -it ubuntu bash
+
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+97dd3f0ce510: Pulling fs layer
+97dd3f0ce510: Downloading  290.8kB/28.86MB
+97dd3f0ce510: Downloading  2.367MB/28.86MB
+97dd3f0ce510: Downloading  4.428MB/28.86MB
+97dd3f0ce510: Downloading  6.197MB/28.86MB
+97dd3f0ce510: Downloading  8.258MB/28.86MB
+97dd3f0ce510: Downloading  10.32MB/28.86MB
+97dd3f0ce510: Downloading  12.38MB/28.86MB
+97dd3f0ce510: Downloading  14.44MB/28.86MB
+97dd3f0ce510: Downloading  16.21MB/28.86MB
+97dd3f0ce510: Downloading  18.26MB/28.86MB
+97dd3f0ce510: Downloading  20.32MB/28.86MB
+97dd3f0ce510: Downloading  22.09MB/28.86MB
+97dd3f0ce510: Downloading  24.16MB/28.86MB
+97dd3f0ce510: Downloading  26.22MB/28.86MB
+97dd3f0ce510: Downloading     28MB/28.86MB
+97dd3f0ce510: Verifying Checksum
+97dd3f0ce510: Download complete
+97dd3f0ce510: Extracting  294.9kB/28.86MB
+97dd3f0ce510: Extracting  4.719MB/28.86MB
+97dd3f0ce510: Extracting  8.258MB/28.86MB
+97dd3f0ce510: Extracting  11.21MB/28.86MB
+97dd3f0ce510: Extracting  15.04MB/28.86MB
+97dd3f0ce510: Extracting  20.64MB/28.86MB
+97dd3f0ce510: Extracting  24.18MB/28.86MB
+97dd3f0ce510: Extracting  26.84MB/28.86MB
+97dd3f0ce510: Extracting  28.31MB/28.86MB
+97dd3f0ce510: Extracting  28.86MB/28.86MB
+97dd3f0ce510: Pull complete
+Digest: sha256:c35e29c9450151419d9448b0fd75374fec4fff364a27f176fb458d472dfc9e54
+Status: Downloaded newer image for ubuntu:latest
+
+root@be10a9258988:/# mkdir -p /usr/src/app
+root@be10a9258988:/# touch /usr/src/app/index.js
+root@be10a9258988:/# ls
+bin   dev  home  media  opt   root  sbin  sys  usr
+boot  etc  lib   mnt    proc  run   srv   tmp  var
+root@be10a9258988:/# ls /usr/src/app/
+index.js
+root@be10a9258988:/# exit
+exit
+
+sofia@sofibook part12-containers-applications % exit
+
+Script done on Fri Dec 26 13:24:39 2025
