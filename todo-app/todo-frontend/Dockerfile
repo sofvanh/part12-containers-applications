@@ -7,7 +7,7 @@ RUN npm test
 FROM node:20 AS build-stage
 WORKDIR /usr/src/app
 COPY --from=test-stage /usr/src/app .
-ENV VITE_BACKEND_URL=http://localhost:3000
+ENV VITE_BACKEND_URL=/api
 RUN npm run build
 
 FROM nginx:1.25-alpine
