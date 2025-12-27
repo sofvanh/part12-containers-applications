@@ -6,6 +6,8 @@ services:
       dockerfile: dev.Dockerfile
     volumes:
       - ./todo-frontend:/usr/src/app
+    environment:
+      - VITE_BACKEND_URL=/api
 
   server:
     image: todo-backend-dev
